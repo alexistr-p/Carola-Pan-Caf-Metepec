@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carola - Pan & Café</title>
+  <!-- Google Fonts: Playfair Display / Caveat / Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="logo">
+      <span>carola</span>
+      <small>• PAN & CAFÉ •</small>
+    </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    <nav class="nav">
+      <a href="#" class="active">Inicio</a>
+      <a href="#">Menú</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Galería</a>
+      <a href="#">Reservaciones</a>
+      <a href="#">Contacto</a>
+    </nav>
+
+
+
+
+    <div class="header-actions">
+      <a href="#mapa" class="btn-location"><i class="fa-solid fa-location-dot"></i> Cómo llegar</a>
+      <a href="https://www.instagram.com/carola.panaderia?stkn=MWc3dWU4MGIzcmtqeA==" class="icon-link"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </header>
+
+
+  <!-- HERO SECTION CON IMAGEN DE FONDO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Buen café, <br>
+          pan real, <br>
+          <span class="handwritten-title">grandes momentos.</span>
+        </h1>
+        <p class="hero-subtitle">En Carola, cada día sabe mejor.</p>
+        <a href="#" class="btn-primary">Ver menú <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="hero-badge">
+        <span class="handwritten-text">¡Un lugar <br> para disfrutar! ♡</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="categories-section">
+    <div class="categories-grid">
+      <div class="category-card">
+        <i class="fa-solid fa-mug-hot"></i>
+        <span>Café</span>
+      </div>
+      <div class="category-card">
+        <i class="fa-solid fa-bread-slice"></i>
+        <span>Panadería</span>
+      </div>
+      <div class="category-card">
+        <i class="fa-solid fa-utensils"></i>
+        <span>Desayunos</span>
+      </div>
+      <div class="category-card">
+        <i class="fa-solid fa-glass-water"></i>
+        <span>Bebidas</span>
+      </div>
+      <div class="category-card">
+        <i class="fa-solid fa-cake-candles"></i>
+        <span>Postres</span>
+      </div>
+      <div class="category-card">
+        <i class="fa-regular fa-star"></i>
+        <span>Especialidades</span>
+      </div>
+    </div>
+    <div class="category-hint">
+      <span class="handwritten-text">¿Qué se te antoja hoy? ↴</span>
+    </div>
+  </section>
+
+  <!-- NUESTROS FAVORITOS -->
+  <section class="favoritos-section">
+    <div class="favoritos-sidebar">
+      <span class="tagline">NUESTROS</span>
+      <h2 class="section-title cursive">Favoritos </h2>
+      <p>Sabores que nos hacen únicos. Descubre algunos de nuestros imperdibles.</p>
+      <a href="#" class="btn-primary">Ver todo el menú <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="favoritos-carousel-wrapper">
+      <div class="favoritos-carousel">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" alt="Croissant de almendra">
+          <h4>Croissant de almendra</h4>
+          <span class="price">$48</span>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=600&auto=format&fit=crop" alt="Latte vainilla">
+          <h4>Latte vainilla</h4>
+          <span class="price">$55</span>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?q=80&w=600&auto=format&fit=crop" alt="Matcha latte">
+          <h4>Matcha latte</h4>
+          <span class="price">$62</span>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?q=80&w=600&auto=format&fit=crop" alt="Chapata de huevo">
+          <h4>Chapata de huevo</h4>
+          <span class="price">$95</span>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?q=80&w=600&auto=format&fit=crop" alt="Rollo de canela">
+          <h4>Rollo de canela</h4>
+          <span class="price">$52</span>
+        </div>
+      </div>
+      <button class="carousel-arrow right"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- POR QUÉ CAROLA -->
+  <section class="about-section">
+    <div class="about-left">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop" alt="Barista preparando café">
+      <span class="overlay-text handwritten-text">Hecho con dedicación ♡</span>
+    </div>
+
+    <div class="about-center">
+      <span class="tagline">POR QUÉ</span>
+      <h2 class="brand-heading">Carola ♡</h2>
+      <p class="about-desc">
+        Somos una cafetería y panadería en Metepec, donde el buen café, el pan artesanal y los detalles hacen la diferencia.
+      </p>
+      <div class="features-grid">
+        <div class="feature-item">
+          <i class="fa-solid fa-leaf"></i>
+          <p>Ingredientes seleccionados</p>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-bread-slice"></i>
+          <p>Pan hecho cada día</p>
+        </div>
+        <div class="feature-item">
+          <i class="fa-regular fa-heart"></i>
+          <p>Un espacio para compartir</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-right">
+      <div class="about-img-box">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop" alt="Interior del café">
+      </div>
+      <div class="about-quote-box">
+        <p class="handwritten-text quote-text">
+          Más que una cafetería, somos parte de tus momentos favoritos. ♡
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="galeria-section">
+    <div class="galeria-sidebar">
+      <h2 class="section-title cursive">Galería</h2>
+      <p>Un vistazo a lo que hacemos, lo que servimos y el ambiente que nos encanta compartir.</p>
+      <a href="https://www.instagram.com/carola.panaderia?stkn=MWc3dWU4MGIzcmtqeA==" class="btn-primary">Ver galería <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="galeria-grid">
+      <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=400&auto=format&fit=crop" alt="Iced Coffee">
+      <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?q=80&w=400&auto=format&fit=crop" alt="Rollo de canela">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=400&auto=format&fit=crop" alt="Mesa del café">
+      <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?q=80&w=400&auto=format&fit=crop" alt="Matcha en mano">
+      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=400&auto=format&fit=crop" alt="Pan recién horneado">
+      <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=400&auto=format&fit=crop" alt="Perrito pet friendly">
+    </div>
+  </section>
+
+  <!-- RESEÑAS / TESTIMONIOS -->
+  <section class="reviews-section">
+    <span class="tagline light">LO QUE DICEN</span>
+    <h2 class="reviews-title handwritten-text">Nuestros clientes ♡</h2>
+
+    <div class="reviews-carousel-wrapper">
+      <button class="review-arrow left" id="prevReview"><i class="fa-solid fa-chevron-left"></i></button>
+      
+      <div class="reviews-carousel">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"El mejor café de Metepec, el pan siempre fresco y el lugar es súper agradable."</p>
+          <small>- Ana G.</small>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Todo delicioso, el matcha y los croissants son mi debilidad. ¡Siempre es un gusto venir!"</p>
+          <small>- Luis R.</small>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Un lugar increíble, el ambiente, la atención y la comida siempre son de 10."</p>
+          <small>- Daniela M.</small>
+        </div>
+      </div>
+
+      <button class="review-arrow right" id="nextReview"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <div class="google-reviews-btn-wrapper">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJKSxmUIuLzYURMFrjFVMyz2k&utm_source=chatgpt.com" class="btn-google">
+        <i class="fa-brands fa-google"></i> Cuentanos tu experiencia
+      </a>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN / CONTACTO -->
+  <section class="location-section" id="mapa">
+    <div class="location-info">
+      <h2 class="reviews-title handwritten-text">Visítanos</h2>
+      <ul>
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <div>Gral. José Vicente Villada 19, Interior 2, Santiaguito, Metepec, Edo. de Méx.</div>
+        </li>
+        <li>
+          <i class="fa-regular fa-clock"></i>
+          
+
+            <table class="hours-table">
+              <tr class="closed">
+                <td>Lunes</td>
+                <td>Cerrado</td>
+              </tr>
+              <tr>
+                <td>Martes</td>
+                <td>09:00 a.m – 09:00 p.m</td>
+              </tr>
+              <tr>
+                <td>Miércoles</td>
+                <td>09:00 a.m – 09:00 p.m</td>
+              </tr>
+              <tr>
+                <td>Jueves</td>
+                <td>09:00 a.m – 09:00 p.m</td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td>09:00 a.m– 09:00 p.m</td>
+              </tr>
+              <tr>
+                <td>Sábado</td>
+                <td>09:00 a.m – 09:00 p.m</td>
+              </tr>
+              <tr>
+                <td>Domingo</td>
+                <td>09:00 a.m – 09:00 p.m</td>
+              </tr>
+            </table>
+                      
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <div>Tel. </div>
+        </li>
+        <li>
+          
+      </ul>
+      <a href="#" class="btn-primary">Cómo llegar <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="location-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15065.138407481358!2d-99.6053!3d19.2536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8a38b1d4411f%3A0x8634a3654ff4bfef!2sMetepec%2C%20Edo.%20de%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div class="map-badge">
+        <span>Carola Pan & Café</span>
+        <a href="#" class="btn-map-link">Ver en Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="logo-footer">
+      <span>carola</span>
+      <small>• PAN & CAFÉ •</small>
+    </div>
+
+
+    <div >
+      <div class="logo" style="align-items: center;">
+        <span>Siguenos</span>
+      </div>
+      <div class="footer-social" >
+        <a href="https://www.instagram.com/carola.panaderia?stkn=MWc3dWU4MGIzcmtqeA=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>  
+    </div>
+
+    <div class="footer-tagline handwritten-text" >
+      ¡Nos vemos pronto! ♡
+    </div>
+
+
+
+  </footer>
+
+  <footer class="footer1">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Carola Pan & Café. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+ 
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
